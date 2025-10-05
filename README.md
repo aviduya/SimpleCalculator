@@ -14,20 +14,16 @@ This project shows how to:
 
 ## How it works
 
-1. **C++ source**:
-   `add(int,int)` is implemented in `src/lib.cpp`.
-   The initial commit purposely contains a bug (`return a - b;`).
-
-2. **Test**:
+1. **Test**:
    `tests/test_main.cpp` runs a couple of `assert()` calls.
    A failure aborts with non-zero exit → CI job fails.
 
-3. **Python entry point**:
+2. **Python entry point**:
    `tools/ci.py` compiles the C++ code and runs the test executable.
    - Debug build (asserts ON)
    - Release build (asserts OFF with `-DNDEBUG`)
 
-4. **GitHub Actions**:
+3. **GitHub Actions**:
    - `ci-branches.yml` runs on pushes / PRs.
    - `ci-daily.yml` runs once a day on the `main` branch.
 
