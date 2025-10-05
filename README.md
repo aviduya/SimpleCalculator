@@ -1,5 +1,10 @@
 # Simple Calculator Demo
 
+## CI Status
+
+[![CI (branches)](https://github.com/aviduya/SimpleCalculator/actions/workflows/ci-branches.yml/badge.svg)](https://github.com/aviduya/SimpleCalculator/actions/workflows/ci-branches.yml)
+[![CI (daily on main)](https://github.com/aviduya/SimpleCalculator/actions/workflows/ci-daily.yml/badge.svg?branch=main)](https://github.com/aviduya/SimpleCalculator/actions/workflows/ci-daily.yml)
+
 This project shows how to:
 
 - Write a tiny **C++ library** (`src/lib.cpp`) with a bug.
