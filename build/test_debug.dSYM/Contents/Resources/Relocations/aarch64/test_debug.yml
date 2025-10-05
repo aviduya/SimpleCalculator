@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/anfernee/Desktop/SimpleCalculator/build/test_debug'
+relocations:     []
+...
