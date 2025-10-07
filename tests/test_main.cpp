@@ -2,6 +2,7 @@
 #include <string_view>
 #include "../src/lib.h"
 
+// Testing Template
 template <typename T, typename U>
 bool check_eq(std::string_view label, const T& got, const U& expected, int& fails) {
     if (got == expected) {
