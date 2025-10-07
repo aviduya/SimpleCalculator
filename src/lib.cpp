@@ -7,5 +7,10 @@ int add(int a, int b) {
 
 // Square a value
 int square(int a) {
-    return a * a;
+    return a*a;
+}
+
+// Subtract two values
+int subtract(int a, int b) {
+    return a - b;
 }

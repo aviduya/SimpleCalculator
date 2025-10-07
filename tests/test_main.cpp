@@ -2,6 +2,7 @@
 #include <string_view>
 #include "../src/lib.h"
 
+// Testing Template
 template <typename T, typename U>
 bool check_eq(std::string_view label, const T& got, const U& expected, int& fails) {
     if (got == expected) {
@@ -22,6 +23,8 @@ int main() {
     check_eq("add(-1, 1)",  add(-1, 1),  0, fails);
     check_eq("square(2)",   square(2),   4, fails);
     check_eq("square(-3)",  square(-3),  9, fails);
+    check_eq("Subtract(1, 1)", subtract(1, 1),   0, fails);
+    check_eq("Subtract(-1, 1)", subtract(-1, 1),   -2, fails);
 
     if (fails == 0) {
         std::cout << "✅  All tests passed\n";
